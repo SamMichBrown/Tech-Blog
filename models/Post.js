@@ -3,7 +3,6 @@ const sequelize = require('../config/connection');
 
 class Post extends Model {}
 
-//====//INITIATE POST MODEL//====//
 Post.init({
     id: {
         type: DataTypes.INTEGER,
@@ -15,7 +14,7 @@ Post.init({
         type: DataTypes.STRING,
         allowNull: false
     },
-    content: {
+    body_text: {
         type: DataTypes.STRING,
         allowNull: false,
     }
