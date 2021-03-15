@@ -10,13 +10,13 @@ router.get('/', withAuth, (req, res) => {
       attributes: [
         'id',
         'title',
-        'body_text',
+        'body_content',
         'created_at',
       ],
       include: [
         {
           model: Comment,
-          attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
+          attributes: ['id', 'content', 'post_id', 'user_id', 'created_at'],
           include: {
             model: User,
             attributes: ['username']
@@ -49,7 +49,7 @@ router.get('/', withAuth, (req, res) => {
       include: [
         {
           model: Comment,
-          attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
+          attributes: ['id', 'content', 'post_id', 'user_id', 'created_at'],
           include: {
             model: User,
             attributes: ['username']

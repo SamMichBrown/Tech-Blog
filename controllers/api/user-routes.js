@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { User, Post, Comment } = require('../../models');
 
-//===== GET USERS =====//
+//GET ALL USERS//
 router.get('/', (req, res) => {
     User.findAll({
             attributes: {
@@ -15,7 +15,7 @@ router.get('/', (req, res) => {
         });
 });
 
-//===== GET SINGLE USER BY ID =====//
+//GET A SINGLE USER BY THEIR ID//
 router.get('/:id', (req, res) => {
     User.findOne({
             attributes: {
@@ -53,7 +53,7 @@ router.get('/:id', (req, res) => {
         });
 });
 
-//===== CREATE USER =====//
+//CREATE A USER//
 router.post('/', (req, res) => {
     User.create({
             username: req.body.username,

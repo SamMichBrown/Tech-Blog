@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: 'Shippori Mincho B1', serif;
 }
 
 body,
@@ -8,33 +9,34 @@ html {
     padding: 0;
     margin: 0;
     font-family: sans-serif;
-    color: #333;
+    color: rgb(70, 70, 70);
 }
 
 a {
     text-decoration: none;
-    color: #225ca3;
+    color: #8c6ae9;
     font-weight: bold;
+    font-size: 2;
     transition: color .1s;
 }
 
 a:hover {
-    color: #3486eb;
+    color: #a094ca;
 }
 
 button {
-    background-color: #225ca3;
+    background-color: #6f54b8;
     border: 0;
     padding: 1%;
-    color: white;
+    color: rgb(48, 48, 48);
     font-weight: bold;
     transition: background-color .1s;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 11px;
 }
 
 button:hover {
-    background-color: #3486eb;
+    background-color: #46338b;
 }
 
 .post-list {
@@ -47,18 +49,20 @@ input {
     padding: .5%;
     border-radius: 5px;
     border: 1px solid #ccc;
+    resize: none;
 }
 
 textarea:focus,
 input:focus {
     outline: none;
-    border: 1px solid #3486eb;
+    border: 1px solid #7f72ca;
 }
 
 textarea {
     min-width: 40%;
     min-height: 100px;
 }
+
 
 form>div {
     margin-bottom: 2%;
@@ -71,27 +75,48 @@ form label {
 .wrapper {
     width: 100%;
     min-height: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
 }
 
 header {
-    border-bottom: 1px solid #ccc;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1%;
+    flex-direction: column;
+    padding: 30px 1% 30px 3%;
+    background-color: #333;
 }
 
-header h1 {
-    font-size: 1em;
+header h1 a {
+    font-size: 3vw;
+    background-color: #6638a1;
+    color: #333;
+    padding: 15px 13px;
+    border-radius: 15px;
+    box-shadow: 7px 6px #472272;
+}
+
+.nav {
+   width: 30%;
+   display: flex; 
+   justify-content: space-between;
+   margin-bottom: 45px;
+   font-size: 1.8vw;
+   border:10px, #674b94
+}
+
+.nav a {
+    font-weight: normal;
 }
 
 main {
     flex: 1;
     padding: 2% 4%;
+    margin: auto;
+}
+
+main form {
+    font-size: 2vw;
+    width: 50%;
 }
 
 .btn-no-style {
@@ -100,24 +125,23 @@ main {
     padding: 0;
     cursor: pointer;
     text-decoration: none;
-    color: #225ca3;
+    color: #8950b8;
     font-size: 100%;
     font-weight: bold;
     transition: color .1s;
-    margin-left: 16px;
 }
 
 .btn-no-style:hover {
     background: none;
-    color: #3486eb;
+    color: #5b2ec4;
 }
 
 .delete-post-btn {
-    background-color: #d41414;
+    background-color: #965acf;
 }
 
 .delete-post-btn:hover {
-    background-color: #ff643d;
+    background-color: #4c3179;
 }
 
 .post {
@@ -128,7 +152,7 @@ main {
 .post .title span {
     font-style: italic;
     font-size: 90%;
-    color: #7d7d7d;
+    color: #646464;
 }
 
 .edit-link {
@@ -137,12 +161,12 @@ main {
 }
 
 .upvote-btn {
-    background-color: #197d0f;
+    background-color: #4e2196;
     transition: background-color .1s;
 }
 
 .upvote-btn:hover {
-    background-color: #1f9c13;
+    background-color: #53168b;
 }
 
 .comment-form {

@@ -2,7 +2,7 @@ const User = require('./User');
 const Post = require('./Post');
 const Comment = require('./Comment');
 
-//===== DEFINING USER/POST RELATIONSHIPS =====//
+//DEFINING USER AND POST RELATIONSHIPS//
 User.hasMany(Post, {
     foreignKey: 'user_id'
 });
@@ -12,7 +12,7 @@ Post.belongsTo(User, {
 });
 
 
-//===== DEFINING COMMENT RELATIONSHIPS =====//
+//DEFINING COMMENT RELATIONSHIPS//
 Comment.belongsTo(User, {
     foreignKey: 'user_id'
 });
