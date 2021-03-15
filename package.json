@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/johannt91/tech-blog.git"
+    "url": "git+https://github.com/SamMichBrown/Tech-Blog.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/johannt91/tech-blog/issues"
+    "url": "https://github.com/SamMichBrown/Tech-Blog/issues"
   },
-  "homepage": "https://github.com/johannt91/tech-blog#readme",
+  "homepage": "https://github.com/SamMichBrown/Tech-Blog#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "connect-session-sequelize": "^7.1.1",
