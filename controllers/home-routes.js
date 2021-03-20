@@ -49,7 +49,7 @@ router.get('/post/:id', (req, res) => {
     attributes: [
       'id',
       'title',
-      'body_content',
+      'post_content',
       'created_at',
     ],
     include: [
