@@ -8,7 +8,7 @@ router.get('/', (req, res) => {
         attributes: [
             'id',
             'title',
-            'body_content',
+            'post_content',
             'created_at',
         ],
         order: [['created_at', 'DESC']],
